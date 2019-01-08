@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <style>
+    *{
+  box-sizing: border-box;
+}
+    
+    
+    {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+   header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: blue;
+   }
+  nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: grey;
+  padding: 20px;
+}
+  nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+}</style>
+</head>
+<body>
+
+    <h2>This is really Fun!!</h2>
+    <p>Dont know what to put here so im rambling lol</p>
+    <header>
+    <h2>This is my first webpage ever!!!</h2>
+    </header>
+
+    <section>
+  <nav>
+    <ul>
+        <h2>This is just a test of my sections</h2>
+        <p>I have sorta figured this out, long way to go yet</p>
+    </ul>
+  </nav>
+<article>
+    <h1>Some Notes from the lesson</h1>     
+    <p>1. To run an application in rails I must use the following code: rails s -p $PORT -b $IP<br>
+    2. To See Routes use rake routes<br>
+    3.Camel case is where each word has a Capital first letter<br>
+    4. To use Ruby in HTML i must use the following <% %><br>
+    5. To create a link to my pages use the following < %  link_to 'whatever', pathname %> without the spaces<br>
+    6. But to actually use the link you must put a = after the %
+    </p>
+    <%= link_to "About", about_path %>
+</article>
+</section>
+
+<footer>
+  <p>Built by Don Lundgren</p>
+</footer>
+
+</body>
+</html>
+
