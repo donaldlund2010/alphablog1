@@ -11,6 +11,7 @@ gem 'bundler', '~>1.17.1'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.4.0'
+gem 'bootstrap', '~> 4.2.1'
 gem 'sassc-rails', '>= 2.0.0'
 gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
