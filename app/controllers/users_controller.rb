@@ -17,7 +17,7 @@ def create
     if @user.save
     session[:user_id] = @user.id
     flash[:success] = "Welcome to the alpha blog #{@user.username}"
-    redirect_to users_path(@user)
+    redirect_to user_path(@user)
     else
     render 'new'
     
