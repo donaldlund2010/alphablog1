@@ -17,11 +17,11 @@ def create
     if @user.save
     session[:user_id] = @user.id
     flash[:success] = "Welcome to the alpha blog #{@user.username}"
-    redirect_to user_path(@user)
+    redirect_to user_path(user)
     else
     render 'new'
     
-end
+    end
 
 def edit
 end
@@ -32,7 +32,7 @@ def update
     redirect_to articles_path
     else
     render 'edit'
-end
+    end
 end
 
 def show
@@ -60,14 +60,14 @@ def require_same_user
     if current_user != @user and !current_user.admin?
     flash[:danger] = "You can only edit your own account"
     redirect_to root_path
-end
+    end
 end
 
 def require_admin
     if logged_in? and !current_user.admin?
     flash[:danger] = "Only admin users can perform that action"
     redirect_to root_path
-end
+    end
 end
 end
 end
